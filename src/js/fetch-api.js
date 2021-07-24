@@ -9,7 +9,7 @@ const { countryList, countryCard, searchForm } = refs;
 const DEBOUNCE_DELAY = 300;
 const debounce = require('lodash.debounce');
 
-searchForm.addEventListener('input',  debounce(onSearchCountries,DEBOUNCE_DELAY));
+searchForm.addEventListener('input', debounce(onSearchCountries,DEBOUNCE_DELAY));
 
 function onSearchCountries(e) {
     e.preventDefault();
