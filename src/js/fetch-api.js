@@ -30,7 +30,7 @@ function onSearchCountries(e) {
 function renderCountry(country) {
     clearRenderCountry();
     if (country.length > 10) {
-        return alert('Too many matches found. Please enter a more specific name.');
+        return Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
         //Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
     } else if (country.length === 1) {
         createCountryCard(country);
@@ -54,6 +54,6 @@ function clearRenderCountry() {
 }
 
 function onFetchError(error) {
-    alert('Oops, there is no country with that name.');
+    Notiflix.Notify.failure('Oops, there is no country with that name.');
     //Notiflix.Notify.failure('Oops, there is no country with that name.');    
 };
