@@ -1,5 +1,3 @@
 import './sass/main.scss';
-import "./js/fetchCountries";
+import "./js/fetch-api";
 import './js/template';
-
-const DEBOUNCE_DELAY = 300;
