@@ -1,6 +1,4 @@
 
-//https://restcountries.eu/rest/v2/all?fields=name;capital;population;flag;languages
-
 import countryListTpl from '../templates/list-countries.hbs';
 import countryCardTpl from '../templates/card_country.hbs';
 import API from "./fetchCountries";
@@ -31,7 +29,6 @@ function renderCountry(country) {
     clearRenderCountry();
     if (country.length > 10) {
         return Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
-        //Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
     } else if (country.length === 1) {
         createCountryCard(country);
         return
@@ -54,6 +51,5 @@ function clearRenderCountry() {
 }
 
 function onFetchError(error) {
-    Notiflix.Notify.failure('Oops, there is no country with that name.');
-    //Notiflix.Notify.failure('Oops, there is no country with that name.');    
+    Notiflix.Notify.failure('Oops, there is no country with that name.');   
 };

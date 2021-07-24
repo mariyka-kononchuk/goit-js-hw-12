@@ -1,0 +1,33 @@
+.country__wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.country-card__image {
+  margin-right: 20px;
+  width: 60px;
+  height: 40px;
+}
+
+.country-card__name {
+  padding: 0;
+  margin: 0;
+
+  font-size: 24px;
+  color: #b22222;
+}
+.country-card__list {
+  margin: 0;
+  padding: 0;
+  color: #212121;
+}
+
+.country-card__item--subtitle {
+  font-weight: 700;
+}
+
+.country-card__item--language {
+  font-style: italic;
+}
